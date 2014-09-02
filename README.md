@@ -9,17 +9,17 @@ Notice package.json has these lines
 "main-es6": "src/es6/index.js",
  ```
 
- keep this format, including the dir structure so that it's easy to use with something like [require-es6](https://www.npmjs.org/package/require-es6)
+keep this format, including the dir structure so that it's easy to use with something like [require-es6](https://www.npmjs.org/package/require-es6)
 
 
- The workflow would look something like this
- ```bash
- git clone https://github.com/kolodny/es6-module-boilerplate
- rm -rf .git
- git init
- npm install
- npm init
- ```
+The workflow would look something like this
+```bash
+git clone https://github.com/kolodny/es6-module-boilerplate
+rm -rf .git
+git init
+npm install
+npm init
+```
 
- Ideas any pull requests welcomed
- ===
+Ideas and pull requests welcomed
+===
