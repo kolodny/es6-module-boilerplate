@@ -1,0 +1,22 @@
+{
+  "name": "es6-module-boilerplate",
+  "version": "0.0.0",
+  "description": "boilerplate for es6 -> es5 module",
+  "main": "src/es5/index.js",
+  "main-es6": "src/es6/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "dependencies": {
+    "traceur": "0.0.58"
+  },
+  "devDependencies": {
+    "grunt-traceur": "^0.2.3",
+    "gulp-header": "^1.0.5",
+    "gulp-remove-lines": "^0.1.0",
+    "gulp-sourcemaps": "^1.1.4",
+    "gulp-traceur": "^0.13.0"
+  }
+}
