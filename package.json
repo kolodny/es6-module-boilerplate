@@ -1,6 +1,6 @@
 {
   "name": "es6-module-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "boilerplate for es6 -> es5 module",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
@@ -18,5 +18,17 @@
     "gulp-remove-lines": "^0.1.0",
     "gulp-sourcemaps": "^1.1.4",
     "gulp-traceur": "^0.13.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kolodny/es6-module-boilerplate.git"
+  },
+  "keywords": [
+    "es6",
+    "harmony"
+  ],
+  "bugs": {
+    "url": "https://github.com/kolodny/es6-module-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kolodny/es6-module-boilerplate"
 }
