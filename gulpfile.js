@@ -1,20 +1,14 @@
-var gulp = require('gulp');
-var traceur = require('gulp-traceur');
-var sourcemaps = require('gulp-sourcemaps');
+var gulp = require("gulp");
+var sourcemaps = require("gulp-sourcemaps");
+var to5 = require("gulp-6to5");
+var concat = require("gulp-concat");
 var header = require('gulp-header');
-var removeLines = require('gulp-remove-lines');
 
-var removeUseStrict = removeLines({'filters': [
-  /^\s*(['"])use strict(\1)\s*;\s*$/
-]});
-
-gulp.task('es5ize', function () {
-  return gulp.src('src/es6/**/*.js')
+gulp.task("default", function () {
+  return gulp.src("src/es6/**/*.js")
     .pipe(sourcemaps.init())
-    .pipe(traceur({sourceMaps: true}))
-    .pipe(removeUseStrict)
-    .pipe(header('"use strict";\nrequire(\'traceur/bin/traceur-runtime\');\n'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('src/es5'))
-    ;
+    .pipe(to5())
+    .pipe(header("\"use strict\";\nrequire('core-js/shim');\nrequire('regenerator/runtime')\n"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("src/es5"));
 });

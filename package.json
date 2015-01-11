@@ -1,6 +1,6 @@
 {
   "name": "es6-module-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "boilerplate for es6 -> es5 module",
   "main": "src/es5/index.js",
   "main-es6": "src/es6/index.js",
@@ -9,15 +9,11 @@
   },
   "author": "Moshe Kolodny",
   "license": "MIT",
-  "dependencies": {
-    "traceur": "0.0.58"
-  },
   "devDependencies": {
-    "grunt-traceur": "^0.2.3",
-    "gulp-header": "^1.0.5",
-    "gulp-remove-lines": "^0.1.0",
-    "gulp-sourcemaps": "^1.1.4",
-    "gulp-traceur": "^0.13.0"
+    "gulp-6to5": "^2.0.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-header": "^1.2.2",
+    "gulp-sourcemaps": "^1.1.4"
   },
   "repository": {
     "type": "git",
@@ -30,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/kolodny/es6-module-boilerplate/issues"
   },
-  "homepage": "https://github.com/kolodny/es6-module-boilerplate"
+  "homepage": "https://github.com/kolodny/es6-module-boilerplate",
+  "dependencies": {
+    "core-js": "^0.4.3",
+    "regenerator": "^0.8.3"
+  }
 }
