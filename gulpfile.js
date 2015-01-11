@@ -12,8 +12,6 @@ gulp.task("default", function () {
       var firstLine = lines[0];
       var toAppend = "\"use strict\";\nrequire('core-js/shim');\nrequire('regenerator/runtime')\n";
       if (/\s*#!/.test(firstLine)) {
-        console.log('First!');
-        console.log(firstLine + '\n' + toAppend + lines.slice(1).join('\n'))
         return firstLine + '\n' + toAppend + lines.slice(1).join('\n');
       }
       return toAppend + data;
