@@ -12,7 +12,7 @@
   "devDependencies": {
     "gulp-6to5": "^2.0.0",
     "gulp-concat": "^2.4.3",
-    "gulp-header": "^1.2.2",
+    "gulp-transform-head": "0.0.1",
     "gulp-sourcemaps": "^1.1.4"
   },
   "repository": {

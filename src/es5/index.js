@@ -1,8 +1,6 @@
 "use strict";
-require('core-js/shim');
-require('regenerator/runtime')
-"use strict";
-
+require("core-js/shim");
+require("regenerator/runtime");
 var gen = regeneratorRuntime.mark(function callee$0$0() {
   return regeneratorRuntime.wrap(function callee$0$0$(context$1$0) {
     while (1) switch (context$1$0.prev = context$1$0.next) {
